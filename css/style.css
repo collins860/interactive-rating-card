@@ -126,7 +126,7 @@ a{
 }
 
 .Exit:active{
-  background: white;
+  color: white;
 }
 input{
   position: absolute;
