@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="card" id="card1">
+      <div id="star">
+        <img src="images/icon-star.svg" />
+      </div>
+      <div class="text">
+        <h2>How did we do?</h2>
+        <p>
+          please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="numbers">
+          <span id="num" onclick="clNum(1)">1</span>
+          <span id="num" onclick="clNum(2)">2</span>
+          <span id="num" onclick="clNum(3)">3</span>
+          <span id="num" onclick="clNum(4)">4</span>
+          <span id="num" onclick="clNum(5)">5</span>
+        </div>
+        <a href="#" id="btn" onclick="btnfunc()"><button>SUBMIT</button></a>
+      </div>
+    </div>
+    <div class="card" id="thankYou">
+      <div class="appreciation">
+        <input
+          value="X"
+          action="action"
+          type="button"
+          class="Exit"
+          onclick="window.history.go('#card'); return false;"
+        />
+        <img id="image" src="images/illustration-thank-you.svg" />
+        <div id="select">No number selected!</div>
+        <div class="tnk-text">
+          <h2>Thank you!</h2>
+          <p>
+            We appreciate you takin the time to give a rating. if you ever need
+            more support, don't hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

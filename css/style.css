@@ -1,0 +1,181 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+  background: linear-gradient(hsl(213, 19%, 18%) ,hsl(223, 13%, 11%));
+  width: 370px;
+  height: 370px;
+  position: relative;
+  border-radius: 20px;
+}
+
+#star{
+  padding: 10px;
+  background-color: hsl(215, 23%, 21%);
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+.text{
+  color: white;
+  margin: 25px;
+}
+
+p{
+  font-size: 14px;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.3rem;
+  padding: 10px 0px;
+}
+
+button{
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+button:hover{
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+button:active{
+  opacity: 0.8;
+}
+
+.numbers{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+#num{
+  background-color: hsl(215, 23%, 21%);
+  width: 45px;
+  height: 45px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+#num:hover{
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+#num:active{
+  background-color: hsl(216, 12%, 54%);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#thankYou{
+  visibility: hidden;
+  position: absolute;
+}
+
+.tnk-text{
+  color: white;
+}
+
+.appreciation{
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.Exit{
+  color: hsl(25, 97%, 53%);
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+input{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background: none;
+  border: none;
+}
+
+#select{
+  background-color: hsl(215, 23%, 21%);
+  padding:5px 10px;
+  color: hsl(25, 97%, 53%);
+  border-radius: 10px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+#image{
+  margin-top: 30px;
+}
+
+
+@media(max-width: 500px){
+  body{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background: linear-gradient(hsl(213, 19%, 18%) ,hsl(223, 13%, 11%));
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+  }
+  .card{
+    background: none;
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 0px;
+    line-height: 3;
+  }
+
+  #select{
+    background-color: inherit;
+  }
+
+  .Exit{
+    color: hsl(25, 97%, 53%);
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    position: absolute;
+    top: -85px;
+  }
+}
